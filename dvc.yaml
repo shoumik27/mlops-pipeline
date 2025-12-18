@@ -1,0 +1,23 @@
+stages:
+  train:
+    cmd: python scripts/train.py
+    deps:
+    - scripts/train.py
+    - data/processed/X_train.csv
+    - data/processed/y_train.csv
+    outs:
+    - models/model.pkl
+    metrics:
+    - outputs/train_metrics.json:
+        cache: false
+
+  evaluate:
+    cmd: python scripts/evaluate.py
+    deps:
+    - scripts/evaluate.py
+    - models/model.pkl
+    - data/processed/X_test.csv
+    - data/processed/y_test.csv
+    metrics:
+    - outputs/eval_metrics.json:
+        cache: false

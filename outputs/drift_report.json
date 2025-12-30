@@ -1,0 +1,34 @@
+{
+  "timestamp": "2025-12-24T18:43:48.027201",
+  "baseline_samples": 120,
+  "prod_samples": 50,
+  "drift_detected": "False",
+  "drift_details": {
+    "sepal length (cm)": {
+      "ks_statistic": 0.08,
+      "p_value": 0.9977109764909107,
+      "drift_detected": "False"
+    },
+    "sepal width (cm)": {
+      "ks_statistic": 0.18,
+      "p_value": 0.3959398631708505,
+      "drift_detected": "False"
+    },
+    "petal length (cm)": {
+      "ks_statistic": 0.16,
+      "p_value": 0.5486851446031328,
+      "drift_detected": "False"
+    },
+    "petal width (cm)": {
+      "ks_statistic": 0.18,
+      "p_value": 0.3959398631708505,
+      "drift_detected": "False"
+    }
+  },
+  "features": [
+    "sepal length (cm)",
+    "sepal width (cm)",
+    "petal length (cm)",
+    "petal width (cm)"
+  ]
+}
